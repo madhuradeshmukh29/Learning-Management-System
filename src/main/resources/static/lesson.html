@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lessons-page">
+
+    <header class="courses-header">
+        <h1>Course Lessons</h1>
+        <p>Learn step by step and track your progress.</p>
+    </header>
+
+    <main class="lessons-container">
+
+        <section class="lesson-card">
+
+            <h1 id="lessonTitle">Lesson Title</h1>
+
+            <div id="lessonContent">
+                <p>Lesson content will appear here.</p>
+            </div>
+
+            <button id="completeButton">
+                Mark as Completed
+            </button>
+
+            <p id="completionMessage"></p>
+
+        </section>
+
+        <button class="back-dashboard-btn"
+                onclick="window.location.href='courses.html'">
+            Back to Courses
+        </button>
+
+    </main>
+
+    <script src="lesson.js"></script>
+
+</body>
+</html>

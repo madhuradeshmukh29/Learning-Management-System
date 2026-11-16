@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - LMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+    <nav class="dashboard-nav">
+        <h2>LearnHub</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <h1>Welcome to Your Learning Space!</h1>
+            <p>Learn new skills, explore courses and grow every day.</p>
+            <button onclick="window.location.href='courses.html'">
+                Explore Courses
+            </button>
+        </section>
+
+        <section class="enrollment-section">
+            <h2>My Enrollments</h2>
+            <p class="section-description">Continue your learning journey.</p>
+
+            <div id="myCourses">
+                <p>Your enrolled courses will appear here.</p>
+            </div>
+        </section>
+
+        <section class="dashboard-actions">
+            <div class="action-card">
+                <h3>Explore Courses</h3>
+                <p>Discover courses and start learning new skills.</p>
+                <button onclick="window.location.href='courses.html'">
+                    View Courses
+                </button>
+            </div>
+
+            <div class="action-card">
+                <h3>My Quiz History</h3>
+                <p>Check your previous quiz scores and progress.</p>
+                <button onclick="window.location.href='quiz-history.html'">
+                    View History
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
